@@ -20,7 +20,7 @@ class RecipesController < ApplicationController
     redirect_to @recipe
   end
 
-  private 
+  private
 
   def recipe_params
     params.require(:recipe).permit(:title,  ingredients_attributes: [
